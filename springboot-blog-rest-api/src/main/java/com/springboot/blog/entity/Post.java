@@ -19,7 +19,7 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY) //<-- @GeneratedValue tells Spring that this is an auto-incrementing field
     private Long id;
 
-    @Column(name = "title", nullable = false) 
+    @Column(name = "title", nullable = false)
     private String title;
 
     @Column(name = "description", nullable = false)
