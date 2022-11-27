@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashSet;
+import java.util.Set;
+
 //Instead of doing Getters/Setters Constructor, toString, etc. we can use Lombok to do it for us.
 @Data //<-- This is the annotation that creates the Getters/Setters Constructor, toString, etc.
 @AllArgsConstructor //<-- another lombok annotation that creates a constructor with all the fields
@@ -27,4 +30,12 @@ public class Post {
 
     @Column(name = "content", nullable = false)
     private String content;
+
+    //We're setting a OneToMany relationship between Post and Comment. This means that a Post can have many comments.
+    //We're setting cascade = CascadeType.ALL. This means that if we delete a post, we want to delete all the comments associated with that post.
+    //We're using orphanRemoval = true. This means that if we remove a comment from the comments Set, we want to delete that comment from the database.
+    //We're using Set instead of List because we don't want to have duplicate comments. Set by default doesn't allow duplicates.
+    // Then we're using HashSet because it's the fastest implementation of Set.
+    @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Comment> comments = new HashSet<>();
 }
