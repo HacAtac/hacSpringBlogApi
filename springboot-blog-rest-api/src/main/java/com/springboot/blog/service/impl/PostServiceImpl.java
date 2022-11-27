@@ -45,6 +45,23 @@ public class PostServiceImpl implements PostService {
         return mapToDTO(post);
     }
 
+    @Override
+    public PostDto updatePost(long id, PostDto postDto) {
+        // get post by id from the database || if not found throw an exception
+        Post post = postRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Post", "id", id));
+
+        //set the new values by passing it to the postDto object
+        post.setTitle(postDto.getTitle());
+        post.setDescription(postDto.getDescription());
+        post.setContent(postDto.getContent());
+
+        //save the updated post to the database
+        Post updatedPost = postRepository.save(post);
+
+        //convert entity to DTO and return the updated post DTO to client
+        return mapToDTO(updatedPost);
+    }
+
 
     //convert Entity into DTO
     private PostDto mapToDTO(Post post) {
