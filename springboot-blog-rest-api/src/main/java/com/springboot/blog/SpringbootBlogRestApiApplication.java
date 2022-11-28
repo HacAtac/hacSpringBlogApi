@@ -8,9 +8,8 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringbootBlogRestApiApplication {
 
-	//model mapper is a library that maps one object to another object
-	@Bean //this will make the model mapper available to the entire application
-	public ModelMapper modelMapper() {
+	@Bean
+	public ModelMapper modelMapper(){
 		return new ModelMapper();
 	}
 

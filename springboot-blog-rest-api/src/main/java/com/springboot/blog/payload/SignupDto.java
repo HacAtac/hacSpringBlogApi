@@ -3,7 +3,7 @@ package com.springboot.blog.payload;
 import lombok.Data;
 
 @Data
-public class SignupDto {
+public class SignUpDto {
     private String name;
     private String username;
     private String email;

@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
-@AllArgsConstructor //@AllArgsConstructor generates a constructor with 1 parameter for each field in your class
-@NoArgsConstructor //@NoArgsConstructor generates a constructor with no parameters
+@AllArgsConstructor
+@NoArgsConstructor
 public class PostResponse {
     private List<PostDto> content;
     private int pageNo;
