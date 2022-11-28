@@ -11,6 +11,9 @@ import com.springboot.blog.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class CommentServiceImpl implements CommentService {
 
@@ -43,6 +46,20 @@ public class CommentServiceImpl implements CommentService {
         //Return the new comment as a CommentDto
         return mapToDTO(newComment);
 
+    }
+
+    @Override
+    public List<CommentDto> getCommentsByPostId(long postId) {
+        // retrieve list of comments by postId
+        List<Comment> comments = commentRepository.findByPostId(postId);
+
+        //condition that checks if the postId is found if it is not found it throws an exception
+        if(comments.isEmpty()){
+            throw new ResourceNotFoundException("Post", "id", postId);
+        }
+
+        //Convert the list of Comment entities to a list of CommentDto objects
+        return comments.stream().map(comment -> mapToDTO(comment)).collect(Collectors.toList());
     }
 
     private CommentDto mapToDTO(Comment comment) {
