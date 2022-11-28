@@ -1,15 +1,15 @@
 package com.springboot.blog.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
 
 //Instead of doing Getters/Setters Constructor, toString, etc. we can use Lombok to do it for us.
-@Data //<-- This is the annotation that creates the Getters/Setters Constructor, toString, etc.
+//@Data //<-- This is the annotation that creates the Getters/Setters Constructor, toString, etc.
+@Getter
+@Setter
 @AllArgsConstructor //<-- another lombok annotation that creates a constructor with all the fields
 @NoArgsConstructor //<-- another lombok annotation that creates a constructor with no fields
 
