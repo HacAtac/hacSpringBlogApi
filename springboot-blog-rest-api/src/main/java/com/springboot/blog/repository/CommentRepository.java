@@ -13,4 +13,6 @@ public interface CommentRepository extends JpaRepository<Comment, Long> {
     //Like things like Select * from Comment where name = 'John' etc etc
 
     List<Comment> findByPostId(long postId);
+
+
 }

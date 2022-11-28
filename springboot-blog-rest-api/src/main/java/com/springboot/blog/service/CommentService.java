@@ -10,4 +10,6 @@ public interface CommentService {
     List<CommentDto> getCommentsByPostId(long postId);
 
     CommentDto getCommentById(Long commentId, Long postId);
+
+    CommentDto updateComment(Long commentId, Long postId, CommentDto commentDto);
 }
