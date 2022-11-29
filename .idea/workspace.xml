@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60dec9a1-aca2-4ee6-ac4b-c3bc1ba45a30" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/resources/application-qa.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/SpringbootBlogRestApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/SpringbootBlogRestApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/CommentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/CommentDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/PostDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/security/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/java/com/springboot/blog/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-blog-rest-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +58,15 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jhack/OneDrive/Desktop/spring/hacSpringBlogApi/springboot-blog-rest-api/src/main/resources"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jhack\OneDrive\Desktop\spring\hacSpringBlogApi\springboot-blog-rest-api\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.SpringbootBlogRestApiApplication">
     <configuration name="PasswordEncoderGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.springboot.blog.utils.PasswordEncoderGenerator" />
@@ -111,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669680045522</updated>
-      <workItem from="1669680047806" duration="3355000" />
+      <workItem from="1669680047806" duration="4725000" />
     </task>
     <servers />
   </component>
