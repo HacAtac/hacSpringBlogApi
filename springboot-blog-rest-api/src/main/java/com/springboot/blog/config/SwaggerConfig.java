@@ -18,24 +18,25 @@ public class SwaggerConfig {
 
     public static final String AUTHORIZATION_HEADER = "Authorization";
 
-    private ApiKey apiKey() {
+    private ApiKey apiKey(){
         return new ApiKey("JWT", AUTHORIZATION_HEADER, "header");
     }
 
-    private ApiInfo apiInfo() {
+    private ApiInfo apiInfo(){
         return new ApiInfo(
                 "Spring Boot Blog REST APIs",
                 "Spring Boot Blog REST API Documentation",
-                "1.0",
+                "1",
                 "Terms of service",
-                new Contact("Jordan Hackworth", "https://github.com/HacAtac", "jhackworth00@outlook.com"),
-                "Licence of API",
+                new Contact("Ramesh Fadatare", "www.javaguides.net", "ramesh@gmail.com"),
+                "License of API",
                 "API license URL",
                 Collections.emptyList()
         );
     }
+
     @Bean
-    public Docket api() {
+    public Docket api(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .securityContexts(Arrays.asList(securityContext()))
@@ -46,11 +47,11 @@ public class SwaggerConfig {
                 .build();
     }
 
-    private SecurityContext securityContext() {
+    private SecurityContext securityContext(){
         return SecurityContext.builder().securityReferences(defaultAuth()).build();
     }
 
-    private List<SecurityReference> defaultAuth() {
+    private List<SecurityReference> defaultAuth(){
         AuthorizationScope authorizationScope = new AuthorizationScope("global", "accessEverything");
         AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
         authorizationScopes[0] = authorizationScope;

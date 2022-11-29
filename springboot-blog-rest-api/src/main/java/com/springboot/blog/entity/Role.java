@@ -17,8 +17,4 @@ public class Role {
 
     @Column(length = 60)
     private String name;
-
-    public Role get() {
-        return this;
-    }
 }

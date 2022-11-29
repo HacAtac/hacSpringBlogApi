@@ -19,12 +19,3 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
     }
 }
-//Steps of adding JWT Authentication to Spring Boot REST API using Spring Security
-//1. Adding JWT Dependency to the pom.xml
-//2. Create JwtAuthenticationEntryPoint class
-//3. Add jwt properties in application.properties file
-//4. Create JwtTokenProvider class
-//5. Craete JwtAuthenticationFilter class
-//6. Create JWTAuthResponse DTO class
-//7. Configure JWT in Spring Security Configuration class
-//8. Change the REST API's that will be secured by JWT
